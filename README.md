@@ -12,12 +12,23 @@ Before running the project, ensure that the following requirements are met:
 Installation:
 Follow the steps below to run the project:
 
-1. Clone the project from Github to your local machine.
-2. Open your terminal and navigate to the project directory.
-3. Create a virtual environment for the project and activate it.
-4. Install the required packages using the following command: pip install -r requirements.txt
-5. Run the application with the command: python manage.py runserver
-6. Open your browser and go to the URL [http://localhost:8000/](http://localhost:8000/) to view the application.
+1. Clone the project repository using Git or download the project ZIP file and extract it.
+2. Install Python 3 on your system if it is not already installed. You can download it from the official website.
+3. Install Django using pip, which is a Python package installer. Open a command prompt or terminal and enter the following command:
+`pip install django`
+4. Navigate to the project directory using the command prompt or terminal.
+5. Create a virtual environment for the project to isolate it from your system's global Python environment. Enter the following command:
+`python -m venv env`
+6. Activate the virtual environment. Enter the following command:
+`source env/bin/activate` (Linux/MacOS) or `env\Scripts\activate` (Windows)
+7. Install the required project dependencies by running the following command:
+`pip install -r requirements.txt`
+8. Create a new SQLite database by running the following command:
+`python manage.py migrate`
+9. Create a superuser for the Django admin panel by running the following command:
+`python manage.py createsuperuser`
+10. Start the development server by running the following command:
+`python manage.py runserver`
 
 Syntax:
 Below are the details of the syntax in the backend and frontend and how each part can be modified:
@@ -42,6 +53,8 @@ The settings are in the "settings.py" file in the discussion_forum directory. Th
 The authentication is handled by the Django authentication system. You can modify the authentication system to add new functionality or change the behavior of the application.
 10. Database:
 The database is a PostgreSQL database. You can modify the database to change the schema or add new tables.
+
+A more detailed description of the syntax used is on the documentation.txt file
 
 Conclusion:
 This documentation provides an overview of the Django-Python discussion forum project, its requirements, installation instructions, and details of the syntax in the backend and frontend. You can modify the project by modifying the URLs, views, models, templates, static files, forms, middleware, settings, authentication system, and database to add new functionality or change the behavior of the application.
