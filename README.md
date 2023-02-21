@@ -12,23 +12,17 @@ Before running the project, ensure that the following requirements are met:
 Installation:
 Follow the steps below to run the project:
 
-1. Clone the project repository using Git or download the project ZIP file and extract it.
-2. Install Python 3 on your system if it is not already installed. You can download it from the official website.
-3. Install Django using pip, which is a Python package installer. Open a command prompt or terminal and enter the following command:
-`pip install django`
-4. Navigate to the project directory using the command prompt or terminal.
-5. Create a virtual environment for the project to isolate it from your system's global Python environment. Enter the following command:
-`python -m venv env`
-6. Activate the virtual environment. Enter the following command:
-`source env/bin/activate` (Linux/MacOS) or `env\Scripts\activate` (Windows)
-7. Install the required project dependencies by running the following command:
-`pip install -r requirements.txt`
-8. Create a new SQLite database by running the following command:
-`python manage.py migrate`
-9. Create a superuser for the Django admin panel by running the following command:
-`python manage.py createsuperuser`
-10. Start the development server by running the following command:
-`python manage.py runserver`
+1.	Clone the project repository using Git or download the project ZIP file and extract it.
+2.	Install Python 3 on your system if it is not already installed. You can download it from the official website.
+3.	Navigate to the project directory using the command prompt or terminal.
+4.	Create a virtual environment for the project to isolate it from your system's global Python environment. Enter the following command: python -m venv env
+5.	Activate the virtual environment. Enter the following command: source env/bin/activate (Linux/MacOS) or env\Scripts\activate (Windows)
+6.	Install the required project dependencies by running the following command: pip install -r requirements.txt
+7.	Create a new SQLite database by running the following command: python manage.py migrate
+8.	Create a superuser for the Django admin panel by running the following command: python manage.py createsuperuser
+9.	Start the development server by running the following command: python manage.py runserver
+Note that Django is included in the requirements.txt file, so you do not need to separately install it. The pip install -r requirements.txt command will install all necessary dependencies, including Django and Pillow.
+
 
 Syntax:
 Below are the detailed outline of the syntax in the backend and frontend and how each part can be modified:
