@@ -24,7 +24,6 @@ def forum(request):
     return render(request, "forum.html", {'posts': posts})
 
 
-@login_required
 def discussion(request, myid):
     post = Post.objects.filter(id=myid).first()
     replies = Replie.objects.filter(post=post)
