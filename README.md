@@ -26,4 +26,3 @@ Note that Django is included in the requirements.txt file, so you do not need to
 Website: http://hozaifa1.pythonanywhere.com/
 
 A more detailed description of the syntax used is on the documentation.txt file
-haha my new message
